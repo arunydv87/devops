@@ -1,0 +1,40 @@
+https://kubernetes.io/docs/reference/generated/kubectl/kubectl-commands#-em-ingress-em-
+
+
+https://github.com/collabnix/dockerlabs/blob/master/docker/dca.md
+
+docker login issue ::: 
+
+https://stackoverflow.com/questions/50151833/cannot-login-to-docker-account
+
+
+command to check command run on image during build.
+
+docker history --no-trunc 1a45ba829f10  | tac | tr -s ' ' | cut -d " " -f 5- | sed 's,^/bin/sh -c #(nop) ,,g' | sed 's,^/bin/sh -c,RUN,g' | sed 's, && ,\n  & ,g' | sed 's,\s*[0-9]*[\.]*[0-9]*\s*[kMG]*B\s*$,,g' | head -n -1
+
+
+
+kubectl config set-context $(kubectl config current-context) --namespace default
+
+
+
+
+JSON Path Query : 
+
+Installtion : 
+
+kubeadm init --pod-network-cidr=10.17.0.0/16 --service-cidr=10.18.0.0/24 --service-dns-domain=dcs.XXXXX.local
+
+
+EKS :: 
+
+https://awsk8snetworkshops.com/module1/containerconf/
+
+https://eksctl.io/usage/creating-and-managing-clusters/
+
+
+
+
+AWS :::::: 
+https://explore.skillbuilder.aws/learn
+
